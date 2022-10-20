@@ -82,20 +82,20 @@ zone "alumnadocastelao.com"  {
 include "/etc/bind/named.conf.options";
 include "/etc/bind/named.conf.local";
 ~~~
-   2. Red propia interna para todos los contenedores  
+   2. Red propia interna para todos los contenedores    
       Utilizando el comando de abajo crearemos una subred para el contenedor.
 ~~~
 docker network create --subnet 10.1.0.0/24 --gateway 10.0.0.1 contenedores_subnet
 ~~~
    Tambien podemos entrar en el documento "docker-compose.yml y añadir manualmente la subred en la sección Networks.
    
-   3. ip fija en el servidor  
+   3. ip fija en el servidor    
    En el mismo documento (docker-compose.yml) deberemos añadir una nueva línea para darle una IP fija al servidor:
 ~~~
 ipv4_address: X.X.X.X (ipv4_address: 10.1.0.254 en mi caso)
 ~~~
 
-   4. Configurar Forwarders  
+   4. Configurar Forwarders    
    Para añadir o modificar la IP del servicio DNS deberemos dirigirnos a la seccion "forwarders" del documento "named.conf.options"
 ~~~
     forwarders {
@@ -104,7 +104,7 @@ ipv4_address: X.X.X.X (ipv4_address: 10.1.0.254 en mi caso)
     };
 ~~~
    
-   5. Crear Zona propia
+   5. Crear Zona propia  
    Para crear una nueva zona deberemos acceder al archivo "named.conf.local" y añadir una nueva zona.
 ~~~
 zone "alumnadocastelao.com"  {
