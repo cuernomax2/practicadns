@@ -1,5 +1,4 @@
-!(/image1.jpg)
-
+![Docker](image1.jpg)
 ## Código de docker-compose:  
 
 - version: "3.3"  
