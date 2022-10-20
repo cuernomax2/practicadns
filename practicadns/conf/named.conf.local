@@ -1,0 +1,7 @@
+zone "alumnadocastelao.com"  {
+    type master;
+    file "/var/lib/bind/db.alumnadocastelao.com";
+    allow-query {
+        any;
+     };
+};
