@@ -2,15 +2,6 @@
 
 - version: "3.3"  
 
-### asir_bind9    
-
-
-### docker-compose: Cliente  
-
-
-### Networks  
-
-
 ### Procedimiento de creación de servicios (contenedor)  
    Es necesario saber y definir el servicio a correr. En el caso de esta práctica ese servicio será Bind9.  
      
