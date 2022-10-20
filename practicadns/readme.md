@@ -74,10 +74,10 @@ zone "alumnadocastelao.com"  {
 ~~~
 ### Configuración Práctica DNS
    1. Volumen por separado de la configuración  
-   La configuración del contenedor por defecto está en "/home/asir2a/Escritorio/SRI/practicadns/conf/named.conf". Para hacer más fácil el proceso deberemos separar este archivo en dos partes.
-   El primero se llamará: "named.conf.local"
-   El segundo se llamará: "named.conf.options"
-   Una vez hayamos hecho esto deberemos borrar todo del archivo original "named.conf" y escribir estas dos líneas de código:
+   La configuración del contenedor por defecto está en "/home/asir2a/Escritorio/SRI/practicadns/conf/named.conf". Para hacer más fácil el proceso deberemos separar este archivo en dos partes.  
+   El primero se llamará: "named.conf.local"  
+   El segundo se llamará: "named.conf.options"  
+   Una vez hayamos hecho esto deberemos borrar todo del archivo original "named.conf" y escribir estas dos líneas de código:  
 ~~~
 include "/etc/bind/named.conf.options";
 include "/etc/bind/named.conf.local";
