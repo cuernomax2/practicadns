@@ -116,5 +116,5 @@ zone "alumnadocastelao.com"  {
 };
 ~~~
    - Para configurar los registros deberemos dirigirnos al archivo "db.alumnadocastelao.com" y añadir el nombre de la zona y alias
-   6. Cliente con herramientas de red
+   6. Cliente con herramientas de red  
    Para configurar el cliente deberemos dirigirnos de nuevo al archivo "docker-compose.yml" y crear el cliente (con el nombre, la network que queremos que utilice, el modo de arranque y demás parámetros necesarios).
